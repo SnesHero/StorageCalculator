@@ -1,13 +1,19 @@
 import React, {useState } from "react";
-import useApp from "./useApp";
 
-export const Results = ({spaces, size, rentTime,}) => {
-
-    const [planos, setPlanos] = useState();
+export const Results = ({_planos, _preco, pressed}) => {
+ 
 
     return(
         <div>
+            <h1>
             Resultado
+            </h1>
+            <p>
+            Seu plano ideal é o {_planos}!
+            </p>
+            <p>
+            Alugue cada espaço por: {_preco} dinheiros
+            </p>
         </div>
     );
 };
